@@ -1,0 +1,21 @@
+Common setup for Switch1 & Switch2
+-enable
+-configure terminal
+
+the billow commond will create vlan with number10 and it's name will be vlan10
+-vlan 10
+-name vlan 10
+-exit
+
+the billow commond will create vlan with number20 and it's name will be vlan20
+-vlan 20
+-name vlan 20
+-exit
+
+interface vlan config for switches 
+the below commond will select the interface F0/1 and then we are changing port mod to access from trunk and then setting the port 
+-interface range F0/1
+-switchport mod access 
+-switchport access vlan 10
+-exit
+
